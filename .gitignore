@@ -1,0 +1,9 @@
+.DS_Store
+
+# virtualenv
+.venv/
+venv/
+ENV/
+
+# MyPy
+.mypy_cache
