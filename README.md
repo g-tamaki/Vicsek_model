@@ -21,14 +21,33 @@ The main parameters of the Vicsek model are as follows
 
 ## Results
 
+**Simulation Conditions:**
+
+- The initial positions and directions of particles are set randomly.
+- The simulation evolves over 1100 time steps.
+
+**Order Parameter:**
+
+In this simulation, two forms of the order parameter are considered:
+
+1. **Instantaneous Order Parameter:** At each time step, the instantaneous order parameter is calculated as the average velocity of all particles at that specific time.
+
+2. **Time-Averaged Order Parameter:** The time-averaged order parameter is calculated by taking the average of the instantaneous order parameters from iteration 1000 to iteration 1100.
+
+These order parameters are used to assess how they change with varying values of eta, providing insights into the system's behavior at each time step and over time with respect to changes in eta.
+
 GIF and PNG files are available in the `data` folder to illustrate the behavior of the Vicsek model for varying values of eta.
 
-### GIFファイル
+### GIF Files
+
+This GIF file visualizes the **instantaneous order parameter** under different values of eta.
 
 1. [low_eta](data/eta=0.1.gif)- Illustrates the behavior at a high eta value, where particles exhibit collective motion and alignment.
 2. [high_eta](data/eta=1.0.gif) - Shows the behavior of particles at a low eta value, where they move independently without significant alignment.
 
-### PNG Files
+### PNG File
+
+This png file visualizes the **Time-Averaged Order Parameter** under different values of eta.
 
 [phase_transition](data/PhaseTransiton.png) - This PNG file demonstrates the phase transition in the Vicsek model.
 As eta is increased, the system transitions from a ordered state to an disordered  state.
